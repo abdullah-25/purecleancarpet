@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "Professional deep-cleaning for carpets, rugs, and upholstery using eco-friendly solutions and advanced techniques in the Greater Toronto Area.",
   keywords: "carpet cleaning, rug cleaning, upholstery cleaning, eco-friendly cleaning, Toronto, GTA",
   metadataBase: new URL("https://purecleancarepet.ca"),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
   openGraph: {
     title: "PureClean Carpet Care | Professional Carpet Cleaning Services",
     description:
