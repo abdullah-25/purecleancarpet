@@ -4,6 +4,10 @@ import { ArrowLeft, CalendarIcon, Clock, User } from "lucide-react"
 import { formatDate } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
+// Import the BlogSchema component at the top of the file
+import { BlogSchema } from "@/components/blog-schema"
+// Import the Breadcrumb component at the top of the file
+import { Breadcrumb } from "@/components/breadcrumb"
 
 const blogPosts = [
   {
@@ -111,6 +115,16 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="flex min-h-screen flex-col">
+      {post && (
+        <BlogSchema
+          title={post.title}
+          description={post.content.substring(0, 160).replace(/<[^>]*>/g, "") + "..."}
+          datePublished={post.date}
+          author={post.author}
+          slug={post.slug}
+          image={post.coverImage}
+        />
+      )}
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
@@ -179,6 +193,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       </header>
       <main className="flex-1">
         <article className="container max-w-4xl py-12">
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: post.title, href: `/blog/${post.slug}`, isCurrent: true },
+            ]}
+          />
           <Button asChild variant="ghost" className="mb-6 gap-1">
             <Link href="/blog">
               <ArrowLeft className="h-4 w-4" />

@@ -19,6 +19,9 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ContactForm } from "@/components/contact-form"
 
+// Import the SchemaMarkup component at the top of the file
+import { SchemaMarkup } from "@/components/schema-markup"
+
 function formatDate(dateString: string) {
   const date = new Date(dateString)
   const options: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" }
@@ -958,6 +961,7 @@ export default function HomePage() {
           </div>
         </div>
       </footer>
+      <SchemaMarkup />
     </div>
   )
 }

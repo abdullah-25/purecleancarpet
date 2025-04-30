@@ -2,6 +2,8 @@ import Link from "next/link"
 import { ArrowRight, Droplet } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { BlogPreview } from "@/components/blog-preview"
+import { Breadcrumb } from "@/components/breadcrumb"
+import { SchemaMarkup } from "@/components/schema-markup"
 
 const blogPosts = [
   {
@@ -82,6 +84,12 @@ export default function BlogPage() {
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-sky-50 to-white">
           <div className="container px-4 md:px-6">
+            <Breadcrumb
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Blog", href: "/blog", isCurrent: true },
+              ]}
+            />
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">PureClean Blog</h1>
@@ -126,6 +134,7 @@ export default function BlogPage() {
           <p>© 2024 PureClean Carpet Care. All rights reserved. Proudly Canadian owned and operated.</p>
         </div>
       </footer>
+      <SchemaMarkup />
     </div>
   )
 }
