@@ -1,11 +1,12 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import emailjs from "@emailjs/browser"
 
 export function ContactForm() {
   const [formState, setFormState] = useState({
@@ -18,6 +19,8 @@ export function ContactForm() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState("")
+  const formRef = useRef(null)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -31,19 +34,36 @@ export function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError("")
 
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormState({
-        name: "",
-        email: "",
-        phone: "",
-        service: "",
-        message: "",
+    // Initialize EmailJS with your public key
+    emailjs.init("fUPd4OELkFpW37_K-")
+
+    // Send the email using EmailJS
+    emailjs
+      .sendForm(
+        "service_pureclean", // Replace with your EmailJS service ID
+        "template_6zhignc", // Your EmailJS template ID from the screenshot
+        formRef.current,
+        "fUPd4OELkFpW37_K-", // Your public key
+      )
+      .then((result) => {
+        console.log("Email sent successfully:", result.text)
+        setIsSubmitting(false)
+        setIsSubmitted(true)
+        setFormState({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        })
       })
-    }, 1500)
+      .catch((error) => {
+        console.error("Error sending email:", error)
+        setIsSubmitting(false)
+        setError("There was an error sending your message. Please try again or contact us directly.")
+      })
   }
 
   if (isSubmitted) {
@@ -78,7 +98,8 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form ref={formRef} onSubmit={handleSubmit} className="space-y-5">
+      {error && <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">{error}</div>}
       <div className="grid gap-3">
         <Label htmlFor="name">Name</Label>
         <Input id="name" name="name" placeholder="Your name" value={formState.name} onChange={handleChange} required />
@@ -109,7 +130,7 @@ export function ContactForm() {
       </div>
       <div className="grid gap-3">
         <Label htmlFor="service">Service Needed</Label>
-        <Select value={formState.service} onValueChange={handleServiceChange} required>
+        <Select name="service" value={formState.service} onValueChange={handleServiceChange} required>
           <SelectTrigger id="service">
             <SelectValue placeholder="Select a service" />
           </SelectTrigger>
