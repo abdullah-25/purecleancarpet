@@ -77,7 +77,7 @@ export default function HomePage() {
               Contact
             </Link>
           </nav>
-          <Button asChild className="hidden md:inline-flex">
+          <Button asChild className="hidden md:inline-flex" aria-label="Go to contact section">
             <Link href="/#contact">Get a Quote</Link>
           </Button>
           <Button variant="outline" size="icon" className="md:hidden">
