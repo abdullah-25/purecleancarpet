@@ -42,7 +42,7 @@ export function ContactForm() {
     // Send the email using EmailJS
     emailjs
       .sendForm(
-        "service_pureclean", // Replace with your EmailJS service ID
+        "service_aqu8k6f", // Replace with your EmailJS service ID
         "template_6zhignc", // Your EmailJS template ID from the screenshot
         formRef.current,
         "fUPd4OELkFpW37_K-", // Your public key
