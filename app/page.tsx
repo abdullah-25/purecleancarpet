@@ -29,28 +29,30 @@ function formatDate(dateString: string) {
 }
 
 export default function HomePage() {
-  const featuredBlogPosts = [
-    {
-      slug: "carpet-maintenance-tips",
-      title: "5 Essential Carpet Maintenance Tips Between Professional Cleanings",
-      excerpt:
-        "Learn how to keep your carpets looking fresh and extend their lifespan with these simple maintenance tips you can do between professional cleanings.",
-      date: "2024-03-15",
-      readTime: "5 min read",
-      author: "Emma Wilson",
-      coverImage: "/carpet-maintenance-blog.jpg",
-    },
-    {
-      slug: "benefits-of-eco-friendly-cleaning",
-      title: "Why Eco-Friendly Carpet Cleaning Solutions Are Better for Your Home",
-      excerpt:
-        "Discover the benefits of choosing eco-friendly carpet cleaning solutions for your home, from improved indoor air quality to safer environments for children and pets.",
-      date: "2024-04-02",
-      readTime: "6 min read",
-      author: "David Thompson",
-      coverImage: "/eco-friendly-cleaning-blog.jpg",
-    },
-  ]
+const featuredBlogPosts = [
+  {
+    slug: "carpet-maintenance-tips",
+    title: "5 Essential Carpet Maintenance Tips Between Professional Cleanings",
+    excerpt:
+      "Learn how to keep your carpets looking fresh and extend their lifespan with these simple maintenance tips you can do between professional cleanings.",
+    date: "2024-03-15",
+    readTime: "5 min read",
+    author: "Emma Wilson",
+    coverImage: "/carpet-maintenance-blog.jpg",
+  },
+  {
+    slug: "benefits-of-eco-friendly-cleaning",
+    title: "Why Eco-Friendly Carpet Cleaning Solutions Are Better for Your Home",
+    excerpt:
+      "Discover the benefits of choosing eco-friendly carpet cleaning solutions for your home, from improved indoor air quality to safer environments for children and pets.",
+    date: "2024-04-02",
+    readTime: "6 min read",
+    author: "David Thompson",
+    coverImage: "/eco-friendly-cleaning-blog.jpg",
+  },
+ 
+]
+
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -124,8 +126,7 @@ export default function HomePage() {
                     Revitalize Your Home with PureClean
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground text-lg md:text-xl">
-                    Professional deep-cleaning for carpets, rugs, and upholstery using eco-friendly solutions and
-                    advanced techniques. Serving Greater Toronto Area.
+                    Book top-rated carpet, rug & upholstery cleaning in Toronto. Pet-safe, eco-friendly & fast same-day service. Free estimates & stain removal included.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">

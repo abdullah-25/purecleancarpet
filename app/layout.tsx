@@ -9,11 +9,11 @@ import { Suspense } from "react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "PureClean Carpet Care | Eco-Friendly Carpet Cleaning Toronto GTA",
+  title: "Carpet Cleaning Toronto | Eco-Friendly & Same-Day Service - PureClean",
   description:
     "Professional carpet, rug & upholstery cleaning in Toronto & GTA. Eco-friendly solutions, pet-safe cleaning, stain removal & same-day service. Free quotes!",
   keywords:
-    "carpet cleaning Toronto, rug cleaning GTA, upholstery cleaning, eco-friendly cleaning, pet-safe carpet cleaning, stain removal, same-day service, professional carpet cleaners Toronto",
+    "Book top-rated carpet, rug & upholstery cleaning in Toronto. Pet-safe, eco-friendly & fast same-day service. Free estimates & stain removal included.",
   metadataBase: new URL("https://www.purecleancarpet.ca"),
   alternates: {
     canonical: "https://www.purecleancarpet.ca",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     apple: "https://www.purecleancarpet.ca/apple-icon.png",
   },
   openGraph: {
-    title: "PureClean Carpet Care | Eco-Friendly Carpet Cleaning Services Toronto",
+    title: "Carpet Cleaning Toronto | Eco-Friendly & Same-Day Service - PureClean",
     description:
-      "Professional deep-cleaning for carpets, rugs, and upholstery using eco-friendly solutions and advanced techniques. Serving the Greater Toronto Area.",
+      "Book top-rated carpet, rug & upholstery cleaning in Toronto. Pet-safe, eco-friendly & fast same-day service. Free estimates & stain removal included.",
     url: "https://www.purecleancarpet.ca",
     siteName: "PureClean Carpet Care",
     locale: "en_CA",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "PureClean Carpet Care | Professional Carpet Cleaning Toronto",
+    title: "Carpet Cleaning Toronto | Eco-Friendly & Same-Day Service - PureClean",
     description:
       "Professional deep-cleaning for carpets, rugs, and upholstery using eco-friendly solutions and advanced techniques. Serving the GTA.",
     images: ["https://www.purecleancarpet.ca/og-image.jpg"],
