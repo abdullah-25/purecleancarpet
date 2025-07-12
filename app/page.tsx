@@ -125,7 +125,7 @@ export default function HomePage() {
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground text-lg md:text-xl">
                     Professional deep-cleaning for carpets, rugs, and upholstery using eco-friendly solutions and
-                    advanced techniques.
+                    advanced techniques. Serving Greater Toronto Area.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
@@ -872,7 +872,7 @@ export default function HomePage() {
                 <span className="text-xl font-bold">PureClean</span>
               </div>
               <p className="text-sm text-muted-foreground">
-                Professional carpet, rug, and upholstery cleaning services using eco-friendly solutions.
+                Serving Toronto, Etobicoke, North York, Mississauga, and more.
               </p>
             </div>
             <div className="space-y-4">
