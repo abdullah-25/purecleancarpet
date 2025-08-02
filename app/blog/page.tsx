@@ -7,6 +7,26 @@ import { SchemaMarkup } from "@/components/schema-markup"
 
 const blogPosts = [
   {
+    slug: "how-often-should-you-clean-carpets-toronto",
+    title: "How Often Should You Clean Your Carpets? Toronto Homeowner's Complete Guide",
+    excerpt:
+      "Discover the optimal carpet cleaning frequency for Toronto homes. Learn how traffic, pets, allergies, and seasons affect how often you should professionally clean your carpets.",
+    date: "2024-12-20",
+    readTime: "7 min read",
+    author: "Sarah Mitchell",
+    coverImage: "/carpet-cleaning-frequency-blog.jpg",
+  },
+  {
+    slug: "professional-carpet-stain-removal-guide",
+    title: "Professional Carpet Stain Removal Guide: Remove Any Stain Like a Pro",
+    excerpt:
+      "Learn professional techniques to remove wine, coffee, pet stains, and more from your carpets. Step-by-step guide with expert tips from Toronto's leading carpet cleaners.",
+    date: "2024-12-15",
+    readTime: "8 min read",
+    author: "Michael Chen",
+    coverImage: "/stain-removal-guide-blog.png",
+  },
+  {
     slug: "carpet-maintenance-tips",
     title: "5 Essential Carpet Maintenance Tips Between Professional Cleanings",
     excerpt:
@@ -60,7 +80,7 @@ export default function BlogPage() {
           <Button asChild className="hidden md:inline-flex">
             <Link href="/#contact">Get a Quote</Link>
           </Button>
-          <Button variant="outline" size="icon" className="md:hidden">
+          <Button variant="outline" size="icon" className="md:hidden bg-transparent">
             <span className="sr-only">Toggle menu</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

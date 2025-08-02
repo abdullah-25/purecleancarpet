@@ -8,6 +8,16 @@ export async function GET() {
   // Define your blog posts (you can also fetch these from a CMS or database)
   const blogPosts = [
     {
+      slug: "how-often-should-you-clean-carpets-toronto",
+      lastmod: "2024-12-20T00:00:00+00:00",
+      priority: "0.80",
+    },
+    {
+      slug: "professional-carpet-stain-removal-guide",
+      lastmod: "2024-12-15T00:00:00+00:00",
+      priority: "0.70",
+    },
+    {
       slug: "carpet-maintenance-tips",
       lastmod: "2024-03-15T00:00:00+00:00",
       priority: "0.70",

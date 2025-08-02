@@ -9,7 +9,300 @@ import { BlogSchema } from "@/components/blog-schema"
 // Import the Breadcrumb component at the top of the file
 import { Breadcrumb } from "@/components/breadcrumb"
 
+// Add the new blog post to the blogPosts array
 const blogPosts = [
+  {
+    slug: "how-often-should-you-clean-carpets-toronto",
+    title: "How Often Should You Clean Your Carpets? Toronto Homeowner's Complete Guide",
+    date: "2024-12-20",
+    readTime: "7 min read",
+    author: "Sarah Mitchell",
+    coverImage: "/carpet-cleaning-frequency-blog.jpg",
+    content: `
+      <p>One of the most common questions Toronto homeowners ask is: "How often should I have my carpets professionally cleaned?" The answer isn't one-size-fits-all—it depends on several factors unique to your home and lifestyle. This comprehensive guide will help you determine the optimal carpet cleaning frequency for your Toronto home.</p>
+      
+      <h3>The General Rule: Every 12-18 Months</h3>
+      <p>Most carpet manufacturers recommend professional cleaning every 12-18 months to maintain warranty coverage and optimal appearance. However, this baseline recommendation should be adjusted based on your specific circumstances. Toronto's unique climate and urban environment can affect how quickly carpets accumulate dirt and require cleaning.</p>
+      
+      <h3>Factors That Affect Carpet Cleaning Frequency</h3>
+      
+      <h4>1. Household Traffic Levels</h4>
+      <p>The amount of foot traffic your carpets receive is the primary factor in determining cleaning frequency:</p>
+      <ul>
+        <li><strong>High Traffic Homes:</strong> Families with children, frequent guests, or busy lifestyles should clean carpets every 6-12 months</li>
+        <li><strong>Medium Traffic Homes:</strong> Average families can typically wait 12-18 months between cleanings</li>
+        <li><strong>Low Traffic Homes:</strong> Empty nesters or single occupants may extend to 18-24 months</li>
+      </ul>
+      
+      <h4>2. Pets in the Home</h4>
+      <p>Pet owners should increase their cleaning frequency significantly:</p>
+      <ul>
+        <li><strong>Multiple pets:</strong> Every 3-6 months</li>
+        <li><strong>One pet:</strong> Every 6-12 months</li>
+        <li><strong>Pets with accidents:</strong> Immediate spot cleaning plus professional cleaning every 3-6 months</li>
+      </ul>
+      <p>Pet dander, hair, and occasional accidents require more frequent professional attention to maintain a healthy indoor environment.</p>
+      
+      <h4>3. Allergies and Health Concerns</h4>
+      <p>Toronto residents with allergies, asthma, or respiratory sensitivities should consider more frequent cleaning:</p>
+      <ul>
+        <li><strong>Severe allergies:</strong> Every 3-6 months</li>
+        <li><strong>Mild allergies:</strong> Every 6-12 months</li>
+        <li><strong>Young children:</strong> Every 6-12 months for healthier indoor air quality</li>
+      </ul>
+      
+      <h4>4. Toronto's Seasonal Factors</h4>
+      <p>Toronto's distinct seasons create unique challenges for carpet maintenance:</p>
+      
+      <h5>Winter (December-March)</h5>
+      <ul>
+        <li>Salt and de-icing chemicals tracked in from sidewalks and roads</li>
+        <li>Increased indoor time means more wear on carpets</li>
+        <li>Dry indoor air can cause static and attract more dirt</li>
+      </ul>
+      
+      <h5>Spring (April-May)</h5>
+      <ul>
+        <li>Mud and moisture from spring thaw</li>
+        <li>Pollen and allergens increase</li>
+        <li>Ideal time for deep cleaning after winter</li>
+      </ul>
+      
+      <h5>Summer (June-August)</h5>
+      <ul>
+        <li>Increased outdoor activity means more dirt tracked in</li>
+        <li>Higher humidity can lead to faster bacterial growth</li>
+        <li>Air conditioning can circulate more dust</li>
+      </ul>
+      
+      <h5>Fall (September-November)</h5>
+      <ul>
+        <li>Leaves and outdoor debris</li>
+        <li>Preparation for winter indoor living</li>
+        <li>Good time for pre-winter deep cleaning</li>
+      </ul>
+      
+      <h3>Signs Your Carpets Need Professional Cleaning</h3>
+      <p>Don't wait for your scheduled cleaning if you notice these warning signs:</p>
+      
+      <ul>
+        <li><strong>Visible stains or discoloration</strong> that home cleaning can't remove</li>
+        <li><strong>Persistent odors</strong> even after vacuuming</li>
+        <li><strong>Increased allergy symptoms</strong> when spending time in carpeted rooms</li>
+        <li><strong>Carpet feels sticky or gritty</strong> underfoot</li>
+        <li><strong>Traffic patterns</strong> are clearly visible</li>
+        <li><strong>Carpet looks dull</strong> despite regular vacuuming</li>
+        <li><strong>It's been over 2 years</strong> since the last professional cleaning</li>
+      </ul>
+      
+      <h3>Toronto-Specific Recommendations</h3>
+      
+      <h4>Downtown Toronto Condos</h4>
+      <p>High-rise living with filtered air and less outdoor exposure: Every 12-18 months</p>
+      
+      <h4>Suburban Toronto Homes</h4>
+      <p>More outdoor access and family activity: Every 6-12 months</p>
+      
+      <h4>Homes Near Major Roads (401, DVP, Gardiner)</h4>
+      <p>Increased air pollution and dust: Every 6-12 months</p>
+      
+      <h4>Homes with Finished Basements</h4>
+      <p>Higher humidity and potential moisture issues: Every 6-12 months</p>
+      
+      <h3>Cost-Effective Cleaning Schedule</h3>
+      <p>To maximize value and carpet lifespan, consider this Toronto homeowner's schedule:</p>
+      
+      <ul>
+        <li><strong>Spring Deep Clean:</strong> Comprehensive cleaning after winter salt and grime</li>
+        <li><strong>Fall Maintenance Clean:</strong> Lighter cleaning to prepare for winter</li>
+        <li><strong>Spot Treatments:</strong> Address spills and stains immediately year-round</li>
+        <li><strong>High-Traffic Area Focus:</strong> Clean entryways and main areas more frequently</li>
+      </ul>
+      
+      <h3>Benefits of Regular Professional Cleaning</h3>
+      <p>Maintaining a consistent cleaning schedule provides numerous benefits:</p>
+      
+      <ul>
+        <li><strong>Extended carpet life:</strong> Regular cleaning can double your carpet's lifespan</li>
+        <li><strong>Better indoor air quality:</strong> Removes allergens, dust mites, and bacteria</li>
+        <li><strong>Maintained appearance:</strong> Prevents permanent staining and wear patterns</li>
+        <li><strong>Warranty protection:</strong> Most manufacturers require regular professional cleaning</li>
+        <li><strong>Cost savings:</strong> Prevention is cheaper than replacement</li>
+        <li><strong>Healthier home environment:</strong> Especially important for children and pets</li>
+      </ul>
+      
+      <h3>Choosing the Right Toronto Carpet Cleaning Service</h3>
+      <p>When selecting a carpet cleaning service in Toronto, consider:</p>
+      
+      <ul>
+        <li><strong>Eco-friendly solutions:</strong> Safe for your family and the environment</li>
+        <li><strong>Local experience:</strong> Understanding of Toronto's specific challenges</li>
+        <li><strong>Flexible scheduling:</strong> Accommodating Toronto's busy lifestyle</li>
+        <li><strong>Comprehensive services:</strong> Stain removal, odor treatment, and protection</li>
+        <li><strong>Satisfaction guarantee:</strong> Confidence in their work quality</li>
+      </ul>
+      
+      <h3>DIY Maintenance Between Professional Cleanings</h3>
+      <p>Extend the time between professional cleanings with proper maintenance:</p>
+      
+      <ul>
+        <li><strong>Vacuum weekly:</strong> More frequently in high-traffic areas</li>
+        <li><strong>Address spills immediately:</strong> Blot, don't rub</li>
+        <li><strong>Use entrance mats:</strong> Reduce dirt and salt tracked in</li>
+        <li><strong>Rotate furniture:</strong> Prevent permanent indentations</li>
+        <li><strong>Control humidity:</strong> Use dehumidifiers in basements</li>
+        <li><strong>Professional spot treatments:</strong> For stubborn stains</li>
+      </ul>
+      
+      <h3>Conclusion: Your Toronto Carpet Cleaning Schedule</h3>
+      <p>The ideal carpet cleaning frequency for your Toronto home depends on your unique circumstances. Use this guide as a starting point, but don't hesitate to adjust based on your carpet's appearance and your family's needs. Remember, regular professional cleaning is an investment in your home's health, appearance, and value.</p>
+      
+      <p>At PureClean Carpet Care, we understand Toronto's unique challenges and can help you develop a customized cleaning schedule that keeps your carpets looking their best year-round. Our eco-friendly solutions and experienced technicians ensure your carpets receive the care they deserve.</p>
+      
+      <p>Ready to establish a regular cleaning schedule? Contact us today for a free consultation and quote tailored to your Toronto home's specific needs.</p>
+    `,
+  },
+  {
+    slug: "professional-carpet-stain-removal-guide",
+    title: "Professional Carpet Stain Removal Guide: Remove Any Stain Like a Pro",
+    date: "2024-12-15",
+    readTime: "8 min read",
+    author: "Michael Chen",
+    coverImage: "/stain-removal-guide-blog.png",
+    content: `
+      <p>Carpet stains are inevitable, but they don't have to be permanent. Whether you're dealing with red wine spills, coffee accidents, pet mishaps, or mysterious marks, this comprehensive guide will teach you professional-grade stain removal techniques used by Toronto's top carpet cleaning experts.</p>
+      
+      <h3>Understanding Different Types of Carpet Stains</h3>
+      <p>Before diving into removal techniques, it's crucial to understand that different stains require different approaches. Stains generally fall into three categories:</p>
+      
+      <ul>
+        <li><strong>Water-soluble stains:</strong> Coffee, tea, wine, juice, and most food spills</li>
+        <li><strong>Oil-based stains:</strong> Grease, makeup, crayon, and cooking oils</li>
+        <li><strong>Protein-based stains:</strong> Blood, sweat, urine, and other bodily fluids</li>
+      </ul>
+      
+      <h3>Essential Stain Removal Supplies</h3>
+      <p>Having the right tools makes all the difference. Here's what professional carpet cleaners always keep on hand:</p>
+      
+      <ul>
+        <li>Clean white cloths or paper towels</li>
+        <li>Spray bottles for solution application</li>
+        <li>Soft-bristled brush or old toothbrush</li>
+        <li>White vinegar and baking soda</li>
+        <li>Dish soap (clear, no dyes)</li>
+        <li>Hydrogen peroxide (3% solution)</li>
+        <li>Enzyme cleaner for organic stains</li>
+        <li>Commercial carpet stain remover</li>
+      </ul>
+      
+      <h3>The Golden Rules of Stain Removal</h3>
+      <p>Before we get into specific stain treatments, remember these fundamental principles:</p>
+      
+      <ol>
+        <li><strong>Act fast:</strong> The sooner you treat a stain, the better your chances of complete removal</li>
+        <li><strong>Blot, don't rub:</strong> Rubbing pushes the stain deeper into carpet fibers</li>
+        <li><strong>Work from outside in:</strong> This prevents the stain from spreading</li>
+        <li><strong>Test first:</strong> Always test cleaning solutions on an inconspicuous area</li>
+        <li><strong>Rinse thoroughly:</strong> Remove all cleaning residue to prevent re-soiling</li>
+      </ol>
+      
+      <h3>Wine and Juice Stains</h3>
+      <p>Red wine and dark juices are among the most feared carpet stains, but they're manageable with the right approach:</p>
+      
+      <ol>
+        <li>Immediately blot up as much liquid as possible</li>
+        <li>Mix 1 tablespoon white vinegar with 1 tablespoon dish soap in 2 cups warm water</li>
+        <li>Apply the solution and blot repeatedly</li>
+        <li>For stubborn stains, try a paste of baking soda and water</li>
+        <li>Rinse with clean water and blot dry</li>
+      </ol>
+      
+      <h3>Coffee and Tea Stains</h3>
+      <p>These common breakfast mishaps are easier to handle than you might think:</p>
+      
+      <ol>
+        <li>Blot the spill immediately</li>
+        <li>Mix 1/3 cup white vinegar with 2/3 cup water</li>
+        <li>Apply and blot the stain</li>
+        <li>If the stain persists, use a commercial enzyme cleaner</li>
+        <li>Rinse and dry thoroughly</li>
+      </ol>
+      
+      <h3>Pet Stains and Odors</h3>
+      <p>Pet accidents require special attention to eliminate both stains and odors:</p>
+      
+      <ol>
+        <li>Remove solid waste and blot liquid immediately</li>
+        <li>Apply an enzyme cleaner specifically designed for pet stains</li>
+        <li>Let it sit for the recommended time (usually 10-15 minutes)</li>
+        <li>Blot and rinse with clean water</li>
+        <li>For persistent odors, sprinkle baking soda, let sit overnight, then vacuum</li>
+      </ol>
+      
+      <h3>Grease and Oil Stains</h3>
+      <p>Oil-based stains require a different approach:</p>
+      
+      <ol>
+        <li>Scrape up excess grease without rubbing it in</li>
+        <li>Sprinkle cornstarch or baking soda to absorb oil</li>
+        <li>Let sit for 15 minutes, then vacuum</li>
+        <li>Apply a small amount of dish soap directly to the stain</li>
+        <li>Work in gently with a soft brush</li>
+        <li>Rinse with warm water and blot dry</li>
+      </ol>
+      
+      <h3>Blood Stains</h3>
+      <p>Blood stains are protein-based and require cold water treatment:</p>
+      
+      <ol>
+        <li>Blot fresh blood with cold water (never hot water!)</li>
+        <li>Mix 1 tablespoon liquid dish soap with 2 cups cold water</li>
+        <li>Apply and blot repeatedly</li>
+        <li>For dried blood, try hydrogen peroxide (test first!)</li>
+        <li>Rinse thoroughly with cold water</li>
+      </ol>
+      
+      <h3>Ink and Marker Stains</h3>
+      <p>These tricky stains often respond well to rubbing alcohol:</p>
+      
+      <ol>
+        <li>Blot the stain with a clean cloth</li>
+        <li>Apply rubbing alcohol to a cotton ball</li>
+        <li>Dab the stain from outside to center</li>
+        <li>Blot with a clean cloth</li>
+        <li>Repeat until no more ink transfers</li>
+        <li>Rinse with water and dry</li>
+      </ol>
+      
+      <h3>When to Call Professional Carpet Cleaners</h3>
+      <p>While many stains can be handled at home, some situations require professional intervention:</p>
+      
+      <ul>
+        <li>Large or widespread stains</li>
+        <li>Stains that have set for days or weeks</li>
+        <li>Delicate or expensive carpets</li>
+        <li>Multiple stain types in one area</li>
+        <li>Previous DIY attempts have made the stain worse</li>
+        <li>Strong odors that won't dissipate</li>
+      </ul>
+      
+      <h3>Prevention Tips from the Pros</h3>
+      <p>The best stain removal strategy is prevention:</p>
+      
+      <ul>
+        <li>Apply carpet protector after professional cleaning</li>
+        <li>Use area rugs in high-traffic zones</li>
+        <li>Implement a no-shoes policy</li>
+        <li>Keep stain removal supplies easily accessible</li>
+        <li>Address spills immediately, even small ones</li>
+        <li>Schedule regular professional deep cleaning</li>
+      </ul>
+      
+      <p>Remember, while these DIY techniques are effective for many stains, professional carpet cleaners have access to specialized equipment and solutions that can handle even the toughest stains. At PureClean Carpet Care, we use advanced stain removal techniques and eco-friendly solutions to restore your carpets to like-new condition.</p>
+      
+      <p>Don't let stubborn stains ruin your beautiful carpets. Contact our Toronto carpet cleaning experts for professional stain removal services that get results every time.</p>
+    `,
+  },
   {
     slug: "carpet-maintenance-tips",
     title: "5 Essential Carpet Maintenance Tips Between Professional Cleanings",
@@ -170,7 +463,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
           <Button asChild className="hidden md:inline-flex">
             <Link href="/#contact">Get a Quote</Link>
           </Button>
-          <Button variant="outline" size="icon" className="md:hidden">
+          <Button variant="outline" size="icon" className="md:hidden bg-transparent">
             <span className="sr-only">Toggle menu</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

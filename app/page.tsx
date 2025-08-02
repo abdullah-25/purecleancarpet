@@ -29,30 +29,38 @@ function formatDate(dateString: string) {
 }
 
 export default function HomePage() {
-const featuredBlogPosts = [
-  {
-    slug: "carpet-maintenance-tips",
-    title: "5 Essential Carpet Maintenance Tips Between Professional Cleanings",
-    excerpt:
-      "Learn how to keep your carpets looking fresh and extend their lifespan with these simple maintenance tips you can do between professional cleanings.",
-    date: "2024-03-15",
-    readTime: "5 min read",
-    author: "Emma Wilson",
-    coverImage: "/carpet-maintenance-blog.jpg",
-  },
-  {
-    slug: "benefits-of-eco-friendly-cleaning",
-    title: "Why Eco-Friendly Carpet Cleaning Solutions Are Better for Your Home",
-    excerpt:
-      "Discover the benefits of choosing eco-friendly carpet cleaning solutions for your home, from improved indoor air quality to safer environments for children and pets.",
-    date: "2024-04-02",
-    readTime: "6 min read",
-    author: "David Thompson",
-    coverImage: "/eco-friendly-cleaning-blog.jpg",
-  },
- 
-]
-
+  const featuredBlogPosts = [
+    {
+      slug: "how-often-should-you-clean-carpets-toronto",
+      title: "How Often Should You Clean Your Carpets? Toronto Homeowner's Complete Guide",
+      excerpt:
+        "Discover the optimal carpet cleaning frequency for Toronto homes. Learn how traffic, pets, allergies, and seasons affect how often you should professionally clean your carpets.",
+      date: "2024-12-20",
+      readTime: "7 min read",
+      author: "Sarah Mitchell",
+      coverImage: "/carpet-cleaning-frequency-blog.jpg",
+    },
+    {
+      slug: "professional-carpet-stain-removal-guide",
+      title: "Professional Carpet Stain Removal Guide: Remove Any Stain Like a Pro",
+      excerpt:
+        "Learn professional techniques to remove wine, coffee, pet stains, and more from your carpets. Step-by-step guide with expert tips from Toronto's leading carpet cleaners.",
+      date: "2024-12-15",
+      readTime: "8 min read",
+      author: "Michael Chen",
+      coverImage: "/stain-removal-guide-blog.png",
+    },
+    {
+      slug: "carpet-maintenance-tips",
+      title: "5 Essential Carpet Maintenance Tips Between Professional Cleanings",
+      excerpt:
+        "Learn how to keep your carpets looking fresh and extend their lifespan with these simple maintenance tips you can do between professional cleanings.",
+      date: "2024-03-15",
+      readTime: "5 min read",
+      author: "Emma Wilson",
+      coverImage: "/carpet-maintenance-blog.jpg",
+    },
+  ]
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -85,7 +93,7 @@ const featuredBlogPosts = [
           <Button asChild className="hidden md:inline-flex" aria-label="Go to contact section">
             <Link href="/#contact">Get a Quote</Link>
           </Button>
-          <Button variant="outline" size="icon" className="md:hidden">
+          <Button variant="outline" size="icon" className="md:hidden bg-transparent">
             <span className="sr-only">Toggle menu</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +134,8 @@ const featuredBlogPosts = [
                     Revitalize Your Home with PureClean
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground text-lg md:text-xl">
-                    Book top-rated carpet, rug & upholstery cleaning in Toronto. Pet-safe, eco-friendly & fast same-day service. Free estimates & stain removal included.
+                    Book top-rated carpet, rug & upholstery cleaning in Toronto. Pet-safe, eco-friendly & fast same-day
+                    service. Free estimates & stain removal included.
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
@@ -143,7 +152,7 @@ const featuredBlogPosts = [
                     asChild
                     variant="outline"
                     size="lg"
-                    className="rounded-full border-sky-200 hover:bg-sky-50 transition-all duration-300"
+                    className="rounded-full border-sky-200 hover:bg-sky-50 transition-all duration-300 bg-transparent"
                   >
                     <Link href="/#services">Our Services</Link>
                   </Button>
@@ -760,7 +769,7 @@ const featuredBlogPosts = [
               <Button
                 asChild
                 variant="outline"
-                className="rounded-full border-sky-200 hover:bg-sky-50 transition-all duration-300"
+                className="rounded-full border-sky-200 hover:bg-sky-50 transition-all duration-300 bg-transparent"
               >
                 <Link href="/blog" className="flex items-center">
                   View All Articles{" "}
@@ -844,7 +853,7 @@ const featuredBlogPosts = [
                     asChild
                     variant="outline"
                     size="lg"
-                    className="rounded-full border-sky-200 hover:bg-sky-50 transition-all duration-300"
+                    className="rounded-full border-sky-200 hover:bg-sky-50 transition-all duration-300 bg-transparent"
                   >
                     <Link href="tel:+16478038776" className="flex items-center">
                       <Phone className="mr-2 h-4 w-4" /> Call Now
