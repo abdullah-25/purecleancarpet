@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from 'next/font/google'
-import Script from "next/script"
+import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import GoogleAnalytics from "@/components/google-analytics"
@@ -87,24 +86,6 @@ export default function RootLayout({
               priceRange: "$$",
               openingHours: ["Mo-Su 08:00-20:00"],
             }),
-          }}
-        />
-
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16976398228"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="google-ads-config"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-16976398228');
-            `,
           }}
         />
       </head>
