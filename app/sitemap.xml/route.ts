@@ -43,6 +43,12 @@ export async function GET() {
       priority: "0.80",
       changefreq: "weekly",
     },
+    {
+      url: "/blogs",
+      lastmod: currentDate,
+      priority: "0.80",
+      changefreq: "weekly",
+    },
   ]
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

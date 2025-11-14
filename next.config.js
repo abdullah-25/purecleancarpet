@@ -12,6 +12,20 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 7, // 7 days
     unoptimized: true,
   },
+  async redirects() {
+    return [
+      {
+        source: "/blogs",
+        destination: "/blog",
+        permanent: true,
+      },
+      {
+        source: "/blogs/:path*",
+        destination: "/blog/:path*",
+        permanent: true,
+      },
+    ]
+  },
   headers: async () => {
     return [
       {
